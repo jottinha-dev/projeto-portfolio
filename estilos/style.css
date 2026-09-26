@@ -265,6 +265,41 @@ footer > a {
     grid-template-columns: 1fr 1fr;
   }
 
+  main{
+    grid-template-columns: auto  300px 1fr   auto;
+    gap: 25px;
+
+  }
+
+  section#ficha {
+    grid-column: 2/3;
+    line-height: 1.8em;
+    height: fit-content;
+    position: sticky;
+    top: 60px;
+
+  }
+
+  section#detalhes {
+    grid-column: 3/4;
+  }
+
+  article#video {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+
+  article#video div.video-container { 
+    width: 50%;
+    height: 50%;
+    margin: 0px;
+  }
+
+ 
+
+
+
   div#projetos-container  div.projeto {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -275,7 +310,7 @@ footer > a {
 
  .foto {
   aspect-ratio: 1/1;
-  max-width: 20%;
+  max-width: 80%;
   max-height: 50%;
  }
 }
